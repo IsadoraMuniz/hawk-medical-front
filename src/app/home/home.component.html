@@ -14,12 +14,18 @@
     />
 
     <span class="login-frase mb-10">Faça o login em sua conta</span>
-    <form class="form mt-4">
+    <form class="form mt-4" (ngSubmit)="login()" >
       <div class="form-group mb-10">
-        <input class="form-control" placeholder="Nome do Usuário"/>
+        <input class="form-control"
+          placeholder="Nome do Usuário"
+          [(ngModel)]="usuario"
+          name="usuario"/>
       </div>
       <div class="form-group mb-10">
-        <input type="password" class="form-control" placeholder="Senha"/>
+        <input type="password" class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="senha"
+          name="senha"/>
       </div>
       <div class="text-center">
         <button class="btn btn-color mt-30 mb-140">Entrar</button>
