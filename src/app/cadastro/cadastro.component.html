@@ -9,18 +9,19 @@
         src="assets/img/logo.png"
         alt="Imagem da logo"
         class="logo-img"
+        [routerLink]="['/home']"
       />
     </div>
 
     <div class="main-container">
       <form class="form form-horizontal form-group center">
         <div class="grid-col-2">
-          <div class="grid-test">
+          <div class="mb-4">
             <input class="form-control"
             placeholder="Nome"
             name="usuario"/>
           </div>
-          <div class="grid-test mb-4 ml-20">
+          <div class="mb-4 ml-20">
             <input class="form-control"
             placeholder="Sobrenome"
             name="usuario"/>
@@ -54,7 +55,6 @@
         </div>
 
         <div class="grid-col-3">
-
           <div class="mb-4">
             <input class="form-control"
             placeholder="CEP"
@@ -74,13 +74,12 @@
           </div>
         </div>
 
-        <div class="grid-col-2-2">
-          <div class="grid-test">
-            <input class="form-control"
-            placeholder="Cidade"
-            name="cidade"/>
-          </div>
-          <div class="grid-test mb-4 ml-20">
+        <div class="grid-col-2">
+          <input class="form-control"
+          placeholder="Cidade"
+          name="cidade"/>
+
+          <div class="mb-4 ml-20">
             <input class="form-control"
             placeholder="Estado"
             name="estado"/>
@@ -90,11 +89,10 @@
         <div class="buttons-container center frase-btn">
           <span class="mb-4">Você é:</span>
           <div class="text-center">
-            <button class="btn btn-paciente btn-lg ">Paciente</button>
-            <button class="btn btn-medico btn-lg ml-20 ">Médico</button>
+            <button  class="btn btn-paciente btn-lg ">Paciente</button>
+            <button [routerLink]="['/cadastromedico']" routerLinkActive="active" class="btn btn-medico btn-lg ml-20">Médico</button>
           </div>
         </div>
       </form>
     </div>
-
 </div>

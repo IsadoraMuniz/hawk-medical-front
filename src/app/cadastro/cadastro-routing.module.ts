@@ -7,7 +7,10 @@ const routes: Routes = [
     path: '',
     component: CadastroComponent,
     children: [
-
+      /* {
+        path: 'cadastromedico',
+        component: CadastroMedicoComponent
+      }, */
     ]
   }
 ];

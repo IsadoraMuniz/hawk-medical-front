@@ -9,8 +9,9 @@
 
   <div class="container-login">
     <img
-    src="assets/img/logo.png"
-    alt="Imagem da logo"
+      src="assets/img/logo.png"
+      alt="Imagem da logo"
+      class="mb-10"
     />
 
     <span class="login-frase mb-10">Faça o login em sua conta</span>
@@ -31,6 +32,6 @@
         <button class="btn btn-color mt-30 mb-140">Entrar</button>
       </div>
     </form>
-    <span class="frase-rodape">Ainda não tem conta?<a class="novo-cadastro"> Faça seu cadastro!</a></span>
+    <span class="frase-rodape">Ainda não tem conta?<a [routerLink]="['/cadastro']" class="novo-cadastro"> Faça seu cadastro!</a></span>
   </div>
 </div>

@@ -55,19 +55,6 @@
   overflow-y: auto;
 }
 
-.grid-col-2 {
-  display: grid;
-  grid-template-columns: 335px 335px;
-  justify-content: center;
-}
-
-.grid-col-3 {
-  display: grid;
-  grid-template-columns: 225px 225px 225px;
-  justify-content: space-around;
-  width: auto;
-}
-
 .center {
   display: flex;
   flex-direction: column;
@@ -78,43 +65,20 @@
   margin-left: 20px;
 }
 
-.buttons-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: 'Inder';
-  font-size: 24px;
+.mt-40 {
+  margin-top: 40px;
 }
 
-.frase-btn {
-  color: #D1EDFB;
-  font-family: 'Roboto', sans-serif;
+.mt-80 {
+  margin-top: 80px;
 }
 
-.btn-paciente {
-  background-color: #FF9C72;
-  color: #FFFF;
+.btn-confirmar {
+  background-color: #D1EDFB;
+  color: #3F474B;
 }
 
-.btn-medico {
-  background-color: #AF3B6E;
-  color: #FFFF;
-}
-
-.texto-cor-branca {
-  color: #FFFF;
-}
-
-@media (max-width: 1400px) {
-
-  .grid-col-2 {
-    display: grid;
-    grid-template-columns: 280px 280px;
-  }
-
-  .grid-col-3 {
-    display: grid;
-    grid-template-columns: 185px 185px 185px;
-    justify-content: space-around;
-  }
-
+.input-especialidade {
+  width: 450px;
+  color: #3F474B;
 }

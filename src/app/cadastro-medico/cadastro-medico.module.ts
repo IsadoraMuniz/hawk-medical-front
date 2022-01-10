@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CadastroRoutingModule } from './cadastro-routing.module';
+import { CadastroMedicoRoutingModule } from './cadastro-medico-routing.module';
+
 
 
 @NgModule({
@@ -9,7 +10,7 @@ import { CadastroRoutingModule } from './cadastro-routing.module';
   ],
   imports: [
     CommonModule,
-    CadastroRoutingModule
+    CadastroMedicoRoutingModule
   ]
 })
-export class CadastroModule { }
+export class CadastroMedicoModule { }
